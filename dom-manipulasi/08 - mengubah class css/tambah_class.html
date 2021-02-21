@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery tambah class</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tambah_warna").click(function() {
+       $("#box").addClass("add_warna");
+     })
+  
+     $("#tambah_border").click(function() {
+       $("#box").addClass("add_border");
+     })
+  
+     $("#tambah_bayang").click(function() {
+       $("#box").addClass("add_bayang");
+     })
+  
+   });
+   </script>
+   <style>
+   #box {
+     width: 300px;
+     height: 80px;
+   }
+   .add_warna {
+     background-color: pink;
+   }
+   .add_border {
+     border: 2px solid black;
+   }
+   .add_bayang {
+     box-shadow: 7px 7px silver;
+   }
+   </style>
+</head>
+<body>
+  <div id="box"></div>
+  <br>
+  <button id="tambah_warna">Tambah Warna</button>
+  <button id="tambah_border">Tambah Border</button>
+  <button id="tambah_bayang">Tambah Bayang</button>
+</body>
+</html>

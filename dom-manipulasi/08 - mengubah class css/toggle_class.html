@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery toggleClass</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#warna").click(function() {
+       $("#box").toggleClass("add_warna");
+     })
+  
+     $("#border").click(function() {
+       $("#box").toggleClass("add_border");
+     })
+  
+     $("#bayang").click(function() {
+       $("#box").toggleClass("add_bayang");
+     })
+  
+   });
+   </script>
+   <style>
+   #box {
+     width: 300px;
+     height: 80px;
+   }
+   .add_warna {
+     background-color: pink;
+   }
+   .add_border {
+     border: 2px solid black;
+   }
+   .add_bayang {
+     box-shadow: 7px 7px silver;
+   }
+   </style>
+</head>
+<body>
+<div id="box" class="add_warna add_border add_bayang"></div>
+<br>
+<button id="warna">Warna</button>
+<button id="border">Border</button>
+<button id="bayang">Bayang</button>
+</body>
+</html>

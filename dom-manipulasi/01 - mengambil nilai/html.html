@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery html()</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tombol").click(function() {
+       var nilai = $("#paragraf").html();
+       alert(nilai);
+     })
+  
+   });
+   </script>
+</head>
+<body>
+<p id="paragraf">
+   Sedang belajar <em>jQuery</em>
+</p>
+<button id="tombol">Ambil Nilai</button>
+</body>
+</html>

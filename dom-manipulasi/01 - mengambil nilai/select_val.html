@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery select val()</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tombol").click(function() {
+       var nilai = $("#kota").val();
+       alert(nilai);
+     })
+  
+   });
+   </script>
+</head>
+<body>
+Pilih Kota:
+<select id="kota" name="kota">
+   <option value="jakarta">Jakarta</option>
+   <option value="bandung">Bandung</option>
+   <option value="bogor">Bogor</option>
+</select>
+<button id="tombol">Ambil Nilai</button>
+</body>
+</html>

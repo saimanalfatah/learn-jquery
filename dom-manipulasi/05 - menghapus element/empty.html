@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery hapus element empty</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tambah").click(function() {
+       $("#belajar").append("<li>Belajar jQuery</li>");
+     })
+  
+     $("#kosong").click(function() {
+       $("#belajar").empty();
+    })
+  
+     $("#hapus").click(function() {
+       $("#belajar").remove();
+     })
+  
+   });
+   </script>
+</head>
+<body>
+<button id="tambah">Tambah jQuery</button>
+<button id="kosong">Empty</button>  
+<button id="hapus">Remove</button>  
+<ul id="belajar">
+   <li id="list_html">Belajar HTML</li>
+   <li id="list_css">Belajar CSS</li>
+   <li id="list_php">Belajar PHP</li>
+   <li id="list_js">Belajar JavaScript</li>
+   <li id="list_mysql">Belajar MySQL</li>
+</ul>
+</body>
+</html>

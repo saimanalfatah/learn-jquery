@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery ubah text() atau html()</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tombol").click(function() {
+       $("#paragraf1").text("<b>#jQuery</b> is Amazing...");
+       $("#paragraf2").html("<b>#jQuery</b> is Amazing...");
+     })
+  
+   });
+   </script>
+</head>
+<body>
+<p id="paragraf1">
+   Sedang belajar jQuery ubah text()
+</p>
+<p id="paragraf2">
+   Sedang belajar jQuery ubah html()
+</p>
+<button id="tombol">Change!</button>
+</body>
+</html>

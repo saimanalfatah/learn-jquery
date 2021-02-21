@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery ubah dan tambah atribut</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+    $("#tambah").click(function() {
+     $("#link_jquery").attr("href",
+       "https://www.duniailkom.com/tutorial-belajar-jquery-bagi-pemula/");
+     $("#link_jquery").attr("title","Belajar jQuery yuk bro...");
+    })
+  
+   });
+   </script>
+</head>
+<body>
+<h2>Belajar jQuery Duniailkom</h2>
+<p>
+   <a id="link_jquery">Tutorial jQuery Duniailkom</a>
+</p>
+<button id="tambah">Tambah Atribut</button>
+</body>
+</html>

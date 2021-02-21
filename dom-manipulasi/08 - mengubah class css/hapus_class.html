@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery hapus class</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#hapus_warna").click(function() {
+       $("#box").removeClass("add_warna");
+     })
+  
+     $("#hapus_border").click(function() {
+       $("#box").removeClass("add_border");
+     })
+  
+     $("#hapus_bayang").click(function() {
+       $("#box").removeClass("add_bayang");
+     })
+  
+   });
+   </script>
+   <style>
+   #box {
+     width: 300px;
+     height: 80px;
+   }
+   .add_warna {
+     background-color: pink;
+   }
+   .add_border {
+     border: 2px solid black;
+   }
+   .add_bayang {
+     box-shadow: 7px 7px silver;
+   }
+   </style>
+</head>
+<body>
+<div id="box" class="add_warna add_border add_bayang"></div>
+<br>
+<button id="hapus_warna">Hapus Warna</button>
+<button id="hapus_border">Hapus Border</button>
+<button id="hapus_bayang">Hapus Bayang</button>
+</body>
+</html>

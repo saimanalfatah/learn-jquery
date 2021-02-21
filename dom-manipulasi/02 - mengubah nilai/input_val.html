@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery ubah input val()</title>
+<script src="../../jquery.js"></script>
+<script>
+   // $(document).ready(function() {
+  
+   //   $("#tombol").click(function() {
+   //     $("#nama").val("Joko Sulistyo");
+   //   })
+  
+   // });
+
+   $(document).ready(function() {
+     
+        $("#tombol").click(function() {
+          var nilai = $("#kotak_isian").val();
+          $("#target").html(nilai);
+        })
+     
+      });
+   </script>
+</head>
+<body>
+	<!-- Nama: <input type="text" id="nama">
+	<button id="tombol">Change!</button> -->
+	
+	Input Text: <input type="text" id="kotak_isian">
+	<button id="tombol">Salin!</button>
+	<p id="target">placeholder...</p>
+</body>
+</html>

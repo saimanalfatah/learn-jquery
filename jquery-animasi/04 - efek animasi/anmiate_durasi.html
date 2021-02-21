@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery animate duration</title>
+<script src="../../jquery.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $( "#tombol_animasi" ).click(function() {
+  
+       $( "#box" ).animate({
+           width: "80%",
+           height: "80px",
+           opacity: 0.4
+         }, "slow");
+  
+         $( "#paragraf" ).animate({
+           fontSize: "40px",
+         }, 3000);  
+  
+     });
+  
+   });
+   </script>
+   <style>
+     #box {
+       width: 100px;
+       height: 50px;
+       background-color: pink;
+       border: 2px solid black;
+     }
+   </style>
+</head>
+<body>
+  <h2>Belajar jQuery Duniailkom</h2>
+  <button id="tombol_animasi">Animate!</button>
+<br><br>
+  <div id="box"></div>
+  <p id="paragraf">Duniailkom</p>
+</body>
+</html>
